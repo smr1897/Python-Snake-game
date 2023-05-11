@@ -23,7 +23,7 @@ while True:
 
     if start_button.draw(screen):
         TILE_SIZE  = 40
-        RANGE = (TILE_SIZE//2,WINDOW-TILE_SIZE//3,TILE_SIZE)
+        RANGE = (TILE_SIZE//2,WINDOW-TILE_SIZE//2,TILE_SIZE)
         get_random_position = lambda: [randrange(*RANGE),randrange(*RANGE)]
         snake = pg.rect.Rect([0,0,TILE_SIZE-2,TILE_SIZE-2])
         snake.center = get_random_position()
