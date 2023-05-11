@@ -22,7 +22,7 @@ while True:
     screen.blit(snake_img,(snake_rect))
 
     if start_button.draw(screen):
-        TILE_SIZE  = 30
+        TILE_SIZE  = 40
         RANGE = (TILE_SIZE//2,WINDOW-TILE_SIZE//2,TILE_SIZE)
         get_random_position = lambda: [randrange(*RANGE),randrange(*RANGE)]
         snake = pg.rect.Rect([0,0,TILE_SIZE-2,TILE_SIZE-2])
