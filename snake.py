@@ -2,7 +2,7 @@ import pygame as pg
 from random import randrange
 import button as button
 
-WINDOW = 800
+WINDOW = 700
 screen = pg.display.set_mode([WINDOW]*2)
 
 #Load button images
