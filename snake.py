@@ -10,7 +10,7 @@ start_img = pg.image.load('start_btn.png').convert_alpha()
 exit_img = pg.image.load('exit_btn.png').convert_alpha()
 
 snake_img = pg.image.load('snakef.png').convert_alpha()
-snake_rect = snake_img.get_rect(center=(410,500))
+snake_rect = snake_img.get_rect(center=(400,500))
 
 #Create button instance
 start_button = button.Button(100,200,start_img,0.8)
