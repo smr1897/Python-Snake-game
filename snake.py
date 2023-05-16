@@ -47,7 +47,7 @@ while True:
                         snake_direction = (0,-TILE_SIZE)
                         dirs = {pg.K_w : 1,pg.K_s : 0,pg.K_a : 1,pg.K_d : 1}
                     if event.key == pg.K_s and dirs[pg.K_s]:
-                        snake_direction = (1,TILE_SIZE)
+                        snake_direction = (0,TILE_SIZE)
                         dirs = {pg.K_w : 0,pg.K_s : 1,pg.K_a : 1,pg.K_d : 1}
                     if event.key == pg.K_a and dirs[pg.K_a]:
                         snake_direction = (-TILE_SIZE,0)
@@ -67,9 +67,9 @@ while True:
                     food.center = get_random_position()
                     length += 1
                 #Draw food
-                pg.draw.rect(screen,'green',food)
+                pg.draw.rect(screen,'yellow',food)
                 # Draw snake
-                [pg.draw.rect(screen,'red',segment)for segment in segments]
+                [pg.draw.rect(screen,'green',segment)for segment in segments]
                 #Move snake
                 time_now = pg.time.get_ticks()
                 if time_now-time > time_step:
