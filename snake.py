@@ -47,7 +47,7 @@ while True:
                         snake_direction = (0,-TILE_SIZE)
                         dirs = {pg.K_w : 1,pg.K_s : 0,pg.K_a : 1,pg.K_d : 1}
                     if event.key == pg.K_s and dirs[pg.K_s]:
-                        snake_direction = (0,TILE_SIZE)
+                        snake_direction = (1,TILE_SIZE)
                         dirs = {pg.K_w : 0,pg.K_s : 1,pg.K_a : 1,pg.K_d : 1}
                     if event.key == pg.K_a and dirs[pg.K_a]:
                         snake_direction = (-TILE_SIZE,0)
