@@ -60,7 +60,7 @@ while True:
                 self_eating = pg.Rect.collidelist(snake,segments[:-1]) != -1
                 if snake.left < 0 or snake.right > WINDOW or snake.top < 0 or snake.bottom > WINDOW or self_eating:
                     snake.center , food.center = get_random_position(),get_random_position()
-                    length , snake_direction = 0 , (0,0)
+                    length , snake_direction = 1 , (0,0)
                     segments = [snake.copy()]
                 #Checking if the food location and snake location is a match
                 if snake.center == food.center:
